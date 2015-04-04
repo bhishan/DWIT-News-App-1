@@ -21,6 +21,8 @@
 		<script src="js/jquery.mobile.iscrollview.js" type="text/javascript"></script>
 		<script src="js/pull.js" type="text/javascript"></script>
 		<script src="js/custom.js" type="text/javascript"></script>
+		<!-- Font-Awesome Icons -->
+		<link href="font_awesome/css/font-awesome.min.css" rel="stylesheet">
 
 		<title>Category</title>
 	</head>
@@ -109,10 +111,11 @@
 					<script id="cat-template" type="text/x-handlebars-template">
 						{{#each posts}}
 						<li><a data-transition="flip" href="single.html?{{@index}}" in-app="true">
-						<h3>{{{this.title}}}</h3>
-						<span class="ui-li-count">{{comments.length}}</span>
-						<p style="white-space:normal">  Author: {{{author.name}}}</p>
-						<p style="white-space:normal"><strong>[{{categories.0.title}}]</strong> - {{prettifyDate date}}  </p>
+						<h3 style="font-size: 20px;">{{{this.title}}}</h3>
+						<span style="font-size: 16px;background: rgb(40, 114, 64);color: #fff;text-shadow: none;
+						margin-right: 15px;padding: 0px 5px;margin-top: -10px;	" class="ui-li-count">{{comments.length}}</span>
+						<p style="white-space:normal"> <strong> Author:</strong> {{{author.name}}}</p>
+						<p style="white-space:normal"><strong style="color: rgb(16, 83, 137);font-size: 14px;text-shadow: none;"> {{categories.0.title}}</strong> - <em>{{prettifyDate date}}</em>  </p>
 						<p class="ui-li-aside"></p>
 						</a></li>
 						{{/each}}
@@ -124,10 +127,10 @@
 				<div data-role="navbar">
 					<ul>
 						<li>
-							<a href="javascript:prev('category', urlParams['cat'])" data-icon="arrow-l" in-app="true"></a>
+							<a id="feedForward"  href="javascript:prev('category', urlParams['cat'])" in-app="true"><i class="fa fa-2x fa-arrow-circle-left"></i>&nbsp;&nbsp;<span style="position: relative;top: -4px;">Prev</span></a>
 						</li>
 						<li>
-							<a href="javascript:next('category', urlParams['cat'])" data-icon="arrow-r" in-app="true"></a>
+							<a id="feedForward"  href="javascript:next('category', urlParams['cat'])" in-app="true"> <i class="fa fa-2x fa-arrow-circle-right"></i>&nbsp;&nbsp;<span style="position: relative;top: -4px;">Next</span></a>
 						</li>
 					</ul>
 				</div>

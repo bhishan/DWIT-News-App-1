@@ -107,7 +107,7 @@
 
 					<script id="single-template" type="text/x-handlebars-template">
 						<h1 style="whitespace:normal">{{{title}}}</h1>
-						<strong>By {{{author.name}}} on {{prettifyDate date}}, Under Category: [{{categories.0.title}}] </strong>
+						By <em>{{{author.name}}}</em> on <em>{{prettifyDate date}}</em>, Under Category: <strong>{{categories.0.title}}</strong>
 						<br><br>
 						<img src="{{thumbnail_images.full.url}}" alt="" class="img">
 						<br>
@@ -116,19 +116,26 @@
 						<div data-role="collapsible" data-mini="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-theme="a" data-content-theme="a" class="comment">
 						<h3>{{comments.length}} Comments</h3>
 						{{#each comments}}
-						<h3>{{{name}}}</h3>{{date}}
+						<h4>{{{name}}}</h4>
+						<strong style="font-size: 14px;">Date:</strong><span style="font-size: 13px;"> {{date}}</span>
 						<p>{{{content}}}</p>
-						<hr>
+						<hr style="border: 0;
+						height: 1px;
+						background: #333;
+						background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+						background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+						background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+						background-image: -o-linear-gradient(left, #ccc, #333, #ccc);">
 						{{/each}}
 						</div>
 
 						<div data-role="popup" id="popupComment" class="ui-content" data-theme="a">
 						<form action="" onsubmit="loading();app.commentSubmit(document.getElementById('name').value, document.getElementById('email').value, document.getElementById('comment').value, {{{id}}});" target="_blank">
-						<label>Name: </label>
+						<label><i class="fa fa-user"></i>&nbsp;Name </label>
 						<input type = "text" id = "name" value = "" pattern=".{3,}" required title="3 characters minimum" size="3"/>
-						<label>Email: </label>
+						<label<i class="fa fa-envelope"></i>&nbsp; Email </label>
 						<input type = "email" id = "email" value = "" required />
-						<label>Comment: </label>
+						<label><i class="fa fa-pencil-square-o"></i>&nbsp;Comment </label>
 						<textarea cols="40" rows="8" pattern=".{20,}" required title="20 characters minimum" id="comment"></textarea>
 						<br />
 

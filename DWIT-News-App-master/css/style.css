@@ -311,3 +311,38 @@ div#popupSearch {
 div#popupSearch .ui-input-search:after {
 	margin-left: 3px;
 }
+/*main page list*/
+.ui-listview > li p {
+	font-size: 15px;
+	font-weight: 400;
+	display: block;
+	margin: .6em 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+/*buttons*/
+.ui-btn-icon-right:after {
+	width: 30px;
+	height: 30px;
+	border-radius: 40px;
+	position: absolute;
+	right: 20px;
+}
+/*comments*/
+a.ui-collapsible-heading-toggle.ui-btn.ui-btn-icon-left.ui-btn-a.ui-mini.ui-icon-arrow-r, a.ui-collapsible-heading-toggle.ui-btn.ui-btn-icon-left.ui-btn-a.ui-mini.ui-icon-arrow-d {
+	background: rgb(16, 83, 137);
+	color: #fff;
+	text-shadow: none;
+}
+div#popupComment {
+	background: rgb(246, 246, 246);
+	box-shadow: 2px 2px 5px #ddd;
+	border: 2px solid #ddd;
+}
+div#popupComment .ui-btn {
+	background: rgb(16, 83, 137);
+	color: #fff;
+	text-shadow: none;
+	border: none;
+}

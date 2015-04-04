@@ -68,8 +68,7 @@
 					<li class="search">
 						<a href="#popupSearch" data-rel="popup" data-position-to="window" data-transition="pop" title="Search" in-app="true">Search</a>
 					</li>
-				
-									
+
 					<div data-role="popup" id="popupSearch" class="ui-content" data-theme="a" >
 						<form action="" onsubmit="changePage('searchresults.html?search=' + document.getElementById('search').value);" target="_blank">
 							<input type="search" name="search" id="search" value="" data-mini="true" placeholder="Search" autofocus/>
@@ -115,19 +114,20 @@
 					<div class="iscroll-pulldown">
 						<span class="iscroll-pull-icon"></span><span class="iscroll-pull-label"></span>
 					</div>
-					
+
 					<script id="blog-template" type="text/x-handlebars-template">
 						{{#each posts}}
 						<li><a data-transition="flip" href="single.html?{{@index}}" in-app="true">
-						<h3>{{{this.title}}}</h3>
-						<span class="ui-li-count">{{comments.length}}</span>
-						<p style="white-space:normal">  Author: {{{author.name}}}</p>
-						<p style="white-space:normal"><strong>[{{categories.0.title}}]</strong> - {{prettifyDate date}}  </p>
+						<h3 style="font-size: 20px;">{{{this.title}}}</h3>
+						<span style="font-size: 16px;background: rgb(40, 114, 64);color: #fff;text-shadow: none;
+						margin-right: 15px;padding: 0px 5px;margin-top: -10px;	" class="ui-li-count">{{comments.length}}</span>
+						<p style="white-space:normal"> <strong> Author:</strong> {{{author.name}}}</p>
+						<p style="white-space:normal"><strong style="color: rgb(16, 83, 137);font-size: 14px;text-shadow: none;"> {{categories.0.title}}</strong> - <em>{{prettifyDate date}}</em>  </p>
 						<p class="ui-li-aside"></p>
 						</a></li>
-						{{/each}}				
+						{{/each}}
 					</script>
-						
+
 				</div>
 
 			</div>
