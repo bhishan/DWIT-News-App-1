@@ -1,0 +1,21 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   DWIT-News-App-master/authorposts.html
+#	modified:   DWIT-News-App-master/blog.html
+#	modified:   DWIT-News-App-master/category.html
+#	modified:   DWIT-News-App-master/css/style.css
+#	modified:   DWIT-News-App-master/index.html
+#	modified:   DWIT-News-App-master/searchresults.html
+#	modified:   DWIT-News-App-master/single.html
+#	modified:   DWIT-News-App-master/spec.html
+#
+# Untracked files:
+#	.project
+#	DWIT-News-App-master/font_awesome/
+#
+

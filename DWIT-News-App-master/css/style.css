@@ -108,8 +108,8 @@ ul li h3 {
 }
 /* Panel */
 .hwrapper .panel {
-  background: #287240;
-  color: #FFFFFF;
+	background: #287240;
+	color: #FFFFFF;
 }
 .hwrapper .panel a {
 	color: #FFF !important;
@@ -291,3 +291,23 @@ ul li h3 {
  font-family: 'Georgia';
  }
  */
+
+/*CSS - Abhishek*/
+#feedForward {
+	background: rgb(40, 114, 64);
+	color: #fff;
+	font-size: 13px;
+	text-shadow: none;
+}
+#feedForward:hover {
+	background: #519065;
+}
+div#popupSearch {
+	background: rgb(16, 83, 137);
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #ddd;
+}
+div#popupSearch .ui-input-search:after {
+	margin-left: 3px;
+}

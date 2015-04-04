@@ -20,6 +20,8 @@
 		<script type="text/javascript" src="js/SocialSharing.js"></script>
 		<script src="js/iscroll.js" type="text/javascript"></script>
 		<script src="js/jquery.mobile.iscrollview.js" type="text/javascript"></script>
+		<!-- Font-Awesome Icons -->
+		<link href="font_awesome/css/font-awesome.min.css" rel="stylesheet">
 		<script src="js/custom.js" type="text/javascript"></script>
 		<title>Single Post</title>
 	</head>
@@ -140,11 +142,12 @@
 			<div class="footer" data-id="footer" data-role="footer" data-tap-toggle="false"  data-transition="slidedown" data-position="fixed">
 				<div data-role="navbar" data-theme="b" data-content-theme="b">
 					<ul>
-						<li>
-							<a href="javascript:share()" data-transition="pop" in-app="true"><i class="fa fa-share-alt-square"></i>Share</a>
+
+						<li class="ui-block-a">
+							<a id="feedForward" href="javascript:share()" data-transition="pop" in-app="true" class="ui-link ui-btn"><i class="fa fa-2x fa-share-alt-square"></i>&nbsp;&nbsp;<span style="position: relative;top: -4px;">Share</span></a>
 						</li>
-						<li>
-							<a href="#popupComment" data-rel="popup" data-position-to="window" data-transition="pop" in-app="true">Comment</a>
+						<li class="ui-block-b">
+							<a id="feedForward" class="ui-link ui-btn" href="#popupComment" data-rel="popup" data-position-to="window" data-transition="pop" in-app="true" aria-haspopup="true" aria-owns="popupComment" aria-expanded="false"><i class="fa fa-2x fa-comments-o"></i>&nbsp;&nbsp;<span style="position: relative;top: -4px;">Comment</span></a>
 						</li>
 
 					</ul>
